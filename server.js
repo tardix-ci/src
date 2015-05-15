@@ -2,6 +2,8 @@
  * TARDIX ci / helper
  *
  * Written by Jared Allard <rainbowdashdc@pony.so>
+ *
+ * MIT
  **/
 
 // requires
@@ -349,7 +351,7 @@ github.on('*', function (event, repo, ref, data) {
     doTests(function(msg) {
       var id = rooms[1].id;
       msg = msg+" - @"+jsn.pusher.name;
-      msg = msg.replace(/\([a-z]+\)/g, "(["+jsn.head_commit.id.substring(0,10)+"](https://github.com/TARDIX/kernel/commit/"+jsn.head_commit.id+"))");
+      msg = msg.replace(/\([a-z]+\)/g, "(["+jsn.head_commit.id.substring(0,10)+"](https://github.com/"+bot.gitHub+"/commit/"+jsn.head_commit.id+"))");
       gitter.client.post("/rooms" + '/' + id + '/chatMessages', {body: {text: msg}});
     });
   });
