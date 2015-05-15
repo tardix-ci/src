@@ -1,0 +1,8 @@
+{
+  "name": "@handler",
+  "version": "1.0.0",
+  "gitterToken": "token",
+  "branch": "some-branch",
+  "repo": "some github repo",
+  "gitHub": "user/repo"
+}

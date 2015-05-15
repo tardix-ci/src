@@ -1,0 +1,22 @@
+{
+  "name": "tardix-ci",
+  "version": "1.0.0",
+  "description": "A simple node CI bot.",
+  "main": "server.js",
+  "dependencies": {
+    "colors": "^1.1.0",
+    "githubhook": "^1.2.0",
+    "jsdom": "^5.4.1",
+    "moment": "^2.10.3",
+    "moment-timezone": "^0.3.1",
+    "node-gitter": "^1.2.8",
+    "node-pre-gyp": "^0.6.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Jared Allard",
+  "license": "MIT"
+}
